@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Fitness course-discovery redesign case study by Anita Muthukumarasamy." />
+  <title>Redesigning Course Discovery — Anita Muthukumarasamy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Spectral:ital,wght@0,400;0,500;0,600;1,500;1,600&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css?v=79" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="shell nav-wrap">
+      <a class="brand" href="../index.html#top" aria-label="Back to homepage">AM</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="../index.html#top">Home</a><a href="../index.html#work">Work</a><a href="../index.html#journey">About</a><a href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="case-study">
+    <section class="case-hero section-pad">
+      <div class="shell">
+        <a class="back-link" href="../index.html#work">← Back to projects</a>
+        <p class="eyebrow">REDESIGNING COURSE DISCOVERY</p>
+        <h1>Turning interest into informed action.</h1>
+        <p class="case-deck">A self-initiated redesign exploring how clearer discovery, comparison and feedback could help people progress from browsing personal-training courses to registering their interest.</p>
+
+        <dl class="case-meta ases-meta">
+          <div><dt>Role</dt><dd>Product and UX designer</dd></div>
+          <div><dt>Project type</dt><dd>Self-initiated concept</dd></div>
+          <div><dt>Scope</dt><dd>Course discovery to interest registration</dd></div>
+            <div><dt>Methods</dt><dd>Heuristic evaluation, journey mapping, information architecture and UI design</dd></div>
+        </dl>
+
+        <figure class="case-hero-image ases-hero-image">
+          <img src="../assets/case-studies/fitness-course-discovery/fitness-course-hero-v2.png" alt="Prospective learner viewing the FitCert course-discovery homepage on a laptop" />
+        </figure>
+        <div class="case-link-row">
+          <a class="case-cta" href="#website-redesign">View Website Redesign →</a>
+        </div>
+        <p class="case-disclaimer">This is an independent concept project and was not affiliated with or commissioned by the organisation whose former website informed the audit. FitCert is a fictional brand created for the redesign.</p>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="shell case-prose-grid">
+        <div><p class="eyebrow">OVERVIEW</p><h2>Designing a clearer path from interest to action.</h2></div>
+        <div class="case-copy">
+          <p>The former website of a fitness education provider listed personal-training programmes from different training institutions. Prospective learners needed to understand which course suited them, compare practical information and decide how to take the next step.</p>
+          <p>I treated conversion as the product problem: not simply encouraging more clicks, but helping visitors move confidently from discovering a course to expressing genuine interest. Because this was a self-initiated project without access to business analytics, the redesign represents a design hypothesis rather than a measured conversion improvement.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section case-tinted">
+      <div class="shell">
+        <p class="eyebrow">THE CHALLENGE</p>
+        <h2 class="case-wide-heading">Make courses easier to discover, understand and act on.</h2>
+        <p class="case-intro">The audit suggested that important decision-making information was fragmented or difficult to interpret, while unclear actions and limited feedback made it harder to progress through the journey.</p>
+        <div class="decision-grid ases-challenges">
+          <article><span>DISCOVERY</span><h3>Finding relevant courses</h3><p>Course schedules and useful entry points were not always easy to locate from the main course experience.</p></article>
+          <article><span>CLARITY</span><h3>Understanding information</h3><p>Jargon, duplicated content and unclear labels increased the effort needed to understand the offering.</p></article>
+          <article><span>EVALUATION</span><h3>Comparing suitability</h3><p>Price, funding eligibility, upcoming intakes and provider information needed to be easier to scan and compare.</p></article>
+          <article><span>ACTION</span><h3>Knowing what happens next</h3><p>Calls to action, form validation and confirmation needed to provide clearer direction and feedback.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="shell case-prose-grid">
+        <div><p class="eyebrow">DISCOVERY</p><h2>Auditing the experience through a prospective learner’s task.</h2></div>
+        <div class="case-copy">
+          <p>I reviewed the existing website against established usability heuristics, including visibility of system status, consistency, match with real-world language, error prevention and recovery. I also walked through a representative task: finding a personal-training course that could be funded using SkillsFuture Credit.</p>
+          <p>The audit recorded where information or feedback could create uncertainty. These observations became design hypotheses to address in the redesign; they were not presented as findings from user interviews or usability tests.</p>
+        </div>
+      </div>
+
+      <div class="shell audit-results">
+        <div class="audit-summary-heading">
+          <p class="stage-label">HEURISTIC AUDIT SUMMARY</p>
+          <h3>Five issues created uncertainty across the course-discovery journey.</h3>
+          <p>Each observation is mapped to the usability principle it most directly violated. These are findings from my heuristic walkthrough, not from user interviews or usability testing.</p>
+        </div>
+
+        <div class="audit-summary-list">
+          <article><span>01</span><div><p class="audit-principle">Recognition rather than recall</p><h4>Courses and schedules were difficult to discover</h4><p>Useful entry points were not consistently visible, requiring visitors to search through the navigation or remember where information might be located.</p><p class="audit-example-copy"><strong>Example</strong> Finding a personal-training course that accepted SkillsFuture Credit required searching across course and intake-related content rather than following one clear path.</p></div></article>
+          <article><span>02</span><div><p class="audit-principle">Match between the system and the real world</p><h4>System language replaced familiar language</h4><p>Technical terms described what happened within the system instead of explaining the outcome in language prospective learners could understand.</p><p class="audit-example-copy"><strong>Example</strong> After the Register Interest form was submitted, the website said that a “record” had been “added” or “updated”. Although this indicated that something had happened, the database-oriented wording did not clearly confirm whether the visitor’s interest had been registered successfully or explain what would happen next.</p></div></article>
+          <article><span>03</span><div><p class="audit-principle">Consistency and standards</p><h4>Important course information was difficult to compare</h4><p>Details such as price, funding eligibility, intake dates and providers were fragmented, duplicated or presented inconsistently across the experience.</p><p class="audit-example-copy"><strong>Example</strong> A learner could not scan one consistent course summary to compare fees, available funding, the next intake and the training provider.</p></div></article>
+          <article><span>04</span><div><p class="audit-principle">Match between the system and the real world</p><h4>Calls to action did not explain the next step</h4><p>Some labels did not clearly communicate what would happen after they were selected, making it harder for visitors to move forward with confidence.</p><p class="audit-example-copy"><strong>Example</strong> The course button said “Read more”, but selecting it led visitors towards registering their interest in the course. A clearer label, such as “Register interest”, would set the right expectation before they act.</p></div></article>
+          <article><span>05</span><div><p class="audit-principle">Error prevention · Visibility of system status</p><h4>Form errors and submission outcomes were unclear</h4><p>Invalid details did not receive immediate inline validation, error messages did not identify the affected fields, and submission feedback could easily be missed after the page refreshed.</p><p class="audit-example-copy"><strong>Example</strong> An invalid email address and Singapore phone number received no immediate feedback. When submission failed, the general error did not identify the incorrect fields. The website then returned the visitor to a content-rich page and placed the message at the bottom, requiring them to scroll down after submitting the form to discover what had happened.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section case-dark">
+      <div class="shell">
+        <p class="eyebrow light">INTENDED JOURNEY</p>
+        <h2 class="case-wide-heading">Supporting the decisions that lead to registration.</h2>
+        <p class="case-intro">I mapped the journey around the questions a prospective learner would need to answer before feeling ready to proceed.</p>
+        <ol class="bridged-journey ases-journey">
+          <li><span>01</span><h3>Discover</h3><p>Find an appropriate personal-training course.</p></li>
+          <li><span>02</span><h3>Evaluate</h3><p>Understand the course content and entry requirements.</p></li>
+          <li><span>03</span><h3>Compare cost</h3><p>Review price and applicable funding support.</p></li>
+          <li><span>04</span><h3>Plan timing</h3><p>Check upcoming intakes and course duration.</p></li>
+          <li><span>05</span><h3>Build trust</h3><p>Learn about the provider and trainer.</p></li>
+          <li><span>06</span><h3>Register interest</h3><p>Share contact details and receive a clear confirmation.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="shell">
+        <p class="eyebrow">DESIGN DIRECTION</p>
+        <h2 class="case-wide-heading">Turning audit observations into product decisions.</h2>
+        <div class="workshop-grid ases-decisions">
+          <article><span>COURSE DISCOVERY</span><h3>Bring the catalogue forward</h3><p>Clear entry points from the homepage, upcoming programmes and navigation help learners reach the course catalogue without relying on search or deep links.</p></article>
+          <article><span>FILTERING</span><h3>Narrow the choice</h3><p>Representative filters for certification body, fees, funding and duration help learners focus on courses that match their practical constraints.</p></article>
+          <article><span>DECISION SUPPORT</span><h3>Surface essential details</h3><p>Course cards and detail pages prioritise price, funding, intake, duration, entry requirements and provider information.</p></article>
+          <article><span>FEEDBACK</span><h3>Make every action visible</h3><p>Explicit labels, contextual validation, submitting feedback and a success state clarify what the system needs and what happens next.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section case-tinted" id="website-redesign">
+      <div class="shell">
+        <p class="eyebrow">THE REDESIGN</p>
+        <h2 class="case-wide-heading">A connected experience from browsing to registering interest.</h2>
+        <p class="case-intro">The redesign preserves the organisation’s course offering while restructuring the journey around clearer discovery, comparison and progression.</p>
+        <div class="redesign-pages">
+          <article class="redesign-page-block">
+            <div class="redesign-page-copy"><span>01 — COURSE DISCOVERY</span><h3>Bring the catalogue forward.</h3><p>The homepage introduces the offering and presents current courses and workshops without requiring visitors to search through the wider website first. If something catches their interest, they can register their interest immediately without leaving the page.</p></div>
+            <figure class="redesign-page-figure"><img src="../assets/case-studies/fitness-course-discovery/home-hires.png" alt="High-resolution redesign of the complete FitCert homepage showing its introduction and latest courses" /></figure>
+            <figure class="page-modal-composite" aria-label="Register Interest modal displayed over the redesigned homepage">
+              <img class="composite-page" src="../assets/case-studies/fitness-course-discovery/home-hires.png" alt="Redesigned FitCert homepage" />
+              <span class="composite-scrim" aria-hidden="true"></span>
+              <img class="composite-modal" src="../assets/case-studies/fitness-course-discovery/register-default-hires.png" alt="Register Interest modal displayed over the homepage" />
+              <figcaption><strong>Register Interest</strong><span>Visitors can express interest immediately when a course catches their attention.</span></figcaption>
+            </figure>
+          </article>
+
+          <article class="redesign-page-block">
+            <div class="redesign-page-copy"><span>02 — FILTERING</span><h3>Help learners narrow the choice.</h3><p>Filters for certification body, fees, funding and duration reduce the catalogue, while removable tags keep the selected criteria visible.</p></div>
+            <figure class="redesign-page-figure"><img src="../assets/case-studies/fitness-course-discovery/filter-hires.png" alt="High-resolution filtered course catalogue showing removable tags for the selected criteria" /></figure>
+          </article>
+
+          <article class="redesign-page-block">
+            <div class="redesign-page-copy"><span>03 — DECISION SUPPORT</span><h3>Surface the information needed to decide and act.</h3><p>The ACE CPT page groups the overview, prerequisites, format, career prospects, price, funding and learning areas. Actions such as “Download Brochure” let visitors find out more, while “Register Interest” provides a clear route forward when they are ready.</p></div>
+            <figure class="redesign-page-figure"><img src="../assets/case-studies/fitness-course-discovery/ace-cpt-hires.png" alt="High-resolution ACE CPT course page with decision-making information and a Register Interest action" /></figure>
+            <figure class="redesign-page-figure"><img src="../assets/case-studies/fitness-course-discovery/brochure-modal-hires.png" alt="High-resolution ACE CPT course page with the Download Course Brochure modal open" /></figure>
+          </article>
+
+          <article class="redesign-page-block action-page-block">
+            <div class="redesign-page-copy"><span>04 — FEEDBACK</span><h3>Make every form state visible.</h3><p>The sequence shows field-level validation, a completed form, progress during submission and a clear confirmation explaining what happens next.</p></div>
+            <div class="modal-sequence" aria-label="Register Interest form states shown in sequence">
+              <figure><figcaption><strong>01 — Error</strong><span>Identify the fields that need attention.</span></figcaption><img src="../assets/case-studies/fitness-course-discovery/register-error-hires.png" alt="Register Interest form showing field-level validation errors" /></figure>
+              <figure><figcaption><strong>02 — Filled</strong><span>Review the completed information before submission.</span></figcaption><img src="../assets/case-studies/fitness-course-discovery/register-filled-hires.png" alt="Completed Register Interest form before submission" /></figure>
+              <figure><figcaption><strong>03 — Submitting</strong><span>Show that the request is being processed.</span></figcaption><img src="../assets/case-studies/fitness-course-discovery/register-submitting-hires.png" alt="Register Interest form displaying its submitting state" /></figure>
+              <figure><figcaption><strong>04 — Submitted</strong><span>Confirm success and explain the next step.</span></figcaption><img src="../assets/case-studies/fitness-course-discovery/register-submitted-hires.png" alt="Register Interest confirmation explaining when the course team will respond" /></figure>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section case-dark">
+      <div class="shell">
+        <p class="eyebrow light">PROPOSED MEASUREMENT</p>
+        <h2 class="case-wide-heading">Measure whether learners can move forward with confidence.</h2>
+        <p class="case-intro">As the concept has not been released, these are proposed measures rather than results. The primary outcome would be completed course-interest registrations, supported by behavioural and usability signals across the journey. The four measures should be interpreted holistically: no single metric can explain whether the experience is effective, and changes in one should be considered alongside conversion, time, errors and abandonment.</p>
+        <div class="question-grid ases-metrics">
+          <article><span>PRIMARY OUTCOME</span><h3>Completed interest registrations</h3><p>The number of visitors who successfully register their interest shows whether the redesigned journey supports its intended outcome and generates meaningful course enquiries.</p></article>
+          <article><span>DISCOVERY</span><h3>Time to convert</h3><p>The time from entering the website to completing an interest registration helps indicate whether the path is direct and unobstructed. Longer journeys may suggest friction when considered alongside navigation paths, validation errors and abandonment.</p></article>
+          <article><span>DECISION</span><h3>Conversion rate</h3><p>The proportion of course-page visitors who complete an interest registration indicates whether the course information and calls to action give learners enough confidence to proceed.</p></article>
+          <article><span>FRICTION</span><h3>Form errors and abandonment</h3><p>Validation errors, repeated attempts and exits during the form reveal where visitors have difficulty providing information or understanding what the system requires.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="shell">
+        <p class="eyebrow">LIMITATIONS &amp; NEXT STEPS</p>
+        <h2 class="case-wide-heading">Validate the hypotheses before extending the journey.</h2>
+        <div class="limitation-grid ases-limitations">
+          <article><span>01</span><h3>Validate the journey with prospective learners</h3><p>Test whether learners can move from discovering and filtering courses to evaluating a suitable option and registering their interest. The research would also assess whether the information hierarchy and terminology support their decisions throughout the journey.</p></article>
+          <article><span>02</span><h3>Document business assumptions</h3><p>Use secondary research and comparable course-registration services to examine assumptions about lead quality, operational constraints and the hand-off after an interest form is submitted. Questions that require access to the provider would remain clearly identified as unresolved.</p></article>
+          <article><span>03</span><h3>Explore enrolment and payment</h3><p>Map the next phase for self-funded and SkillsFuture Credit learners, including eligibility, documentation, payment and confirmation.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="shell case-prose-grid">
+        <div><p class="eyebrow">REFLECTION</p><h2>Conversion starts with reducing uncertainty.</h2></div>
+        <div class="case-copy"><p>This project helped me frame conversion as a sequence of user decisions rather than a single call to action. A learner must first find a relevant course, understand whether it suits their goals and constraints, trust the provider and know what will happen after expressing interest. The redesign brings those decisions into one connected journey, while the next step would be validating whether the proposed experience genuinely helps prospective learners progress.</p></div>
+      </div>
+    </section>
+
+    <section class="case-next"><div class="shell"><p class="eyebrow">NEXT PROJECT</p><a href="user-personas.html"><span>Creating User Personas</span><b>→</b></a></div></section>
+  </main>
+  <script src="../script.js"></script>
+</body>
+</html>

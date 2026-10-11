@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Bridged real-time customer-support platform case study by Anita Muthukumarasamy." />
+  <title>Bridged Application — Anita Muthukumarasamy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Spectral:ital,wght@0,400;0,500;0,600;1,500;1,600&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css?v=79" />
+</head>
+<body class="case-bridged">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="shell nav-wrap">
+      <a class="brand" href="../index.html#top" aria-label="Back to homepage">AM</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="../index.html#top">Home</a><a href="../index.html#work">Work</a><a href="../index.html#journey">About</a><a href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="case-study">
+    <section class="case-hero section-pad">
+      <div class="shell">
+        <a class="back-link" href="../index.html#work">← Back to projects</a>
+        <p class="eyebrow">BRIDGED APPLICATION</p>
+        <h1>Building a real-time support platform from triage to resolution.</h1>
+        <p class="case-deck">Designing and engineering a full-stack platform that guides customers through triage, assigns suitable agents and supports live conversations.</p>
+        <dl class="case-meta bridged-meta">
+          <div><dt>Role</dt><dd>Product owner and full-stack developer</dd></div>
+          <div><dt>Status</dt><dd>MVP deployed</dd></div>
+          <div><dt>Stack</dt><dd>Java, Spring Boot, React, PostgreSQL, WebSocket and AWS</dd></div>
+          <div><dt>Approach</dt><dd>User journey, product backlog, system design and end-to-end delivery</dd></div>
+        </dl>
+        <figure class="case-hero-image bridged-chat-hero"><img src="../assets/case-studies/bridged/chat-support-hero.png" alt="Fictional Bridged customer-support workspace showing a live conversation, customer details, assigned agent and queue" /></figure>
+        <div class="case-link-row"><a class="case-cta" href="http://13.214.207.223/" target="_blank" rel="noopener noreferrer">Bridged MVP Demo →</a><a class="case-cta secondary" href="https://github.com/thisisanita/bridged" target="_blank" rel="noopener noreferrer">GitHub Documentation →</a></div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="shell case-prose-grid">
+        <div><p class="eyebrow">OVERVIEW</p><h2>Connecting customers with suitable support agents.</h2></div>
+        <div class="case-copy"><p>Bridged is a full-stack, real-time customer-support chat platform. Customers complete a short triage process before entering a PostgreSQL-backed queue. The system then assigns an eligible agent, who can accept the chat and communicate with the customer in real time.</p><p>I designed and built the application from concept to deployment. The project brings together product thinking, user-flow design, backend architecture, frontend development, data modelling, real-time communication and cloud infrastructure.</p></div>
+      </div>
+    </section>
+
+    <section class="case-section case-tinted">
+      <div class="shell">
+        <p class="eyebrow">THE PRODUCT CHALLENGE</p>
+        <h2 class="case-wide-heading">Route every customer quickly, suitably and fairly.</h2>
+        <p class="case-intro">A useful routing experience has to balance several needs at once: understand the customer’s request, find an agent with the right language and skill, respect agents’ availability and capacity, distribute workload fairly, and respond appropriately to priority requests.</p>
+        <div class="decision-grid">
+          <article><span>SUITABILITY</span><h3>Match the need</h3><p>Only agents with the required language and topic proficiency should be considered.</p></article>
+          <article><span>FAIRNESS</span><h3>Share the workload</h3><p>The most proficient eligible agent should not automatically receive every conversation.</p></article>
+          <article><span>URGENCY</span><h3>Respect priority</h3><p>Higher-priority chats need earlier target assignment times without creating a rigid queue.</p></article>
+          <article><span>RELIABILITY</span><h3>Protect capacity</h3><p>Concurrent assignment attempts must not select the same chat or over-allocate an agent.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="shell">
+        <p class="eyebrow">CUSTOMER JOURNEY</p>
+        <h2 class="case-wide-heading">From requesting help to resolving a conversation.</h2>
+        <p class="case-intro">I mapped the end-to-end journey before implementation so that product behaviour, system states and technical responsibilities followed the same flow.</p>
+        <ol class="bridged-journey">
+          <li><span>01</span><h3>Request help</h3><p>The customer starts a new support conversation.</p></li>
+          <li><span>02</span><h3>Select language</h3><p>A language triage step captures the communication requirement.</p></li>
+          <li><span>03</span><h3>Identify topic</h3><p>The support topic determines the skill needed from an agent.</p></li>
+          <li><span>04</span><h3>Join the queue</h3><p>The chat is persisted with its priority and assignment deadline.</p></li>
+          <li><span>05</span><h3>Get assigned</h3><p>An eligible agent is selected and accepts the conversation.</p></li>
+          <li><span>06</span><h3>Chat in real time</h3><p>Customer, agent and bot messages are stored and delivered live.</p></li>
+          <li><span>07</span><h3>Close the chat</h3><p>The conversation ends and the agent’s available capacity is restored.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="case-section case-dark">
+      <div class="shell">
+        <p class="eyebrow light">PRODUCT DECISIONS</p>
+        <h2 class="case-wide-heading">Turning routing requirements into clear system rules.</h2>
+        <div class="workshop-grid bridged-decisions">
+          <article><span>TRIAGE</span><h3>Separate language from topic</h3><p>Customers answer one question at a time: which language they need and what their enquiry is about. The system stores these as two distinct criteria, allowing it to match agents by both language proficiency and topic skill.</p></article>
+          <article><span>ELIGIBILITY</span><h3>Filter before ranking</h3><p>The system first filters agents by language, skill, availability and remaining capacity, then ranks only those who are eligible.</p></article>
+          <article><span>FAIRNESS</span><h3>Workload before proficiency</h3><p>Ranking only by proficiency would repeatedly favour the most skilled agents. Open-chat count is considered first, followed by proficiency.</p></article>
+          <article><span>PRIORITY</span><h3>Use assignment deadlines</h3><p>I replaced a fixed weighted-priority approach with target assignment times, allowing the most urgent deadline to be considered first.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="shell">
+        <p class="eyebrow">ARCHITECTURE &amp; IMPLEMENTATION</p>
+        <h2 class="case-wide-heading">A modular monolith supporting the complete experience.</h2>
+        <p class="case-intro">I chose a modular monolith: one deployable Spring Boot application organised into distinct modules for customer triage, assignment, chat lifecycle and messaging. This kept the MVP simpler to develop, test and deploy while maintaining clear boundaries between responsibilities.</p>
+        <p class="case-intro">I first built the backend, including the data model, REST APIs, assignment logic and real-time messaging. I then used AI coding tools to build the React frontend around these existing APIs and customer-agent flows.</p>
+        <div class="architecture-flow" aria-label="Bridged technical architecture">
+          <div><span>INTERFACE</span><b>React + Vite</b><small>Customer and agent experiences</small></div><i>REST<br />STOMP</i>
+          <div class="accent"><span>APPLICATION</span><b>Spring Boot</b><small>API, scheduler and assignment rules</small></div><i>JPA</i>
+          <div><span>DATA</span><b>PostgreSQL</b><small>Chats, messages, agents and skills</small></div><i>DEPLOY</i>
+          <div><span>INFRASTRUCTURE</span><b>AWS</b><small>EC2, RDS and Nginx</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section case-tinted">
+      <div class="shell">
+        <p class="eyebrow">ASSIGNMENT LOGIC</p>
+        <h2 class="case-wide-heading">Selecting an agent without sacrificing fairness or consistency.</h2>
+        <div class="assignment-flow">
+          <div><b>Queued chat</b><small>Ready for assignment</small></div><i>→</i><div><b>Filter</b><small>Language, skill, availability, capacity</small></div><i>→</i><div><b>Rank</b><small>Workload, then proficiency</small></div><i>→</i><div><b>Protect</b><small>Transaction, locking and SKIP LOCKED</small></div><i>→</i><div><b>Assign</b><small>Agent accepts the chat</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="shell">
+        <p class="eyebrow">TECHNICAL CHALLENGES</p>
+        <h2 class="case-wide-heading">Solving the technical challenges behind the MVP.</h2>
+        <div class="insight-grid bridged-challenges">
+          <article><span>END-TO-END DEVELOPMENT</span><h3>Connecting every layer</h3><p>Spring Boot, WebSockets and AWS deployment were new to me. Building Bridged helped me understand how the frontend, API, database, real-time messaging and cloud infrastructure operate as one system.</p></article>
+          <article><span>ASSIGNMENT ALGORITHM</span><h3>Balancing suitability, workload and priority</h3><p>The first algorithm ranked agents mainly by proficiency, which could repeatedly direct work to the most proficient agents. I introduced open-chat counts and maximum capacity, then ranked eligible agents by workload before proficiency. After researching how other support systems use service-level targets, I also applied a simplified approach in which each priority level receives a target assignment time and the most urgent deadline is considered first.</p></article>
+          <article><span>CONCURRENCY</span><h3>Protecting shared state without losing queued chats</h3><p>To prevent concurrent assignment attempts from selecting the same chat or exceeding an agent’s capacity, I wrapped the assignment process in a database transaction and used pessimistic row locking with PostgreSQL’s SKIP LOCKED. A locked chat is skipped temporarily rather than blocking the process, while the scheduled assignment job continues checking unassigned chats on subsequent runs so they remain visible and are considered again.</p></article>
+          <article><span>DEPLOYED ENVIRONMENT</span><h3>Handling data and time consistently</h3><p>Local and RDS databases generated independent IDs, while Singapore and UTC server time caused messages to appear out of order. I aligned the MVP server timezone; a future version will use Instant or OffsetDateTime.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section case-dark" id="backlog">
+      <div class="shell">
+        <p class="eyebrow light">COMPLETED &amp; PLANNED DEVELOPMENT</p>
+        <h2 class="case-wide-heading">Tracking the delivered MVP and the path to production readiness.</h2>
+        <p class="case-intro">I translated the delivered system and planned improvements into epics, user stories and implementation tasks with acceptance criteria. The board makes the current product state visible: completed MVP capabilities sit alongside the work needed to make Bridged more secure, resilient and observable.</p>
+        <figure class="case-figure backlog-figure"><img src="../assets/case-studies/bridged/jira-board.svg?v=2" alt="Bridged Jira board snapshot showing planned production-readiness stories in To Do and completed MVP stories in Done" /><figcaption>Product backlog snapshot showing completed MVP work and planned production improvements.</figcaption></figure>
+        <div class="backlog-columns">
+          <article><span>COMPLETED MVP</span><h3>Delivered in the MVP</h3><ul><li>Guided customers through language and support-topic triage</li><li>Automatically assigned customers by priority, agent eligibility, capacity and workload</li><li>Enabled persistent, real-time messaging between customers and agents</li><li>Supported chat acceptance, closure and automatic capacity updates</li><li>Deployed the complete application on AWS</li></ul></article>
+          <article><span>PLANNED DEVELOPMENT</span><h3>Planned next steps</h3><ul><li>Restore active conversations after browser refresh and prevent duplicate chats</li><li>Secure the platform with authentication and role-based access</li><li>Trigger assignment through customer and agent lifecycle events</li><li>Classify support topics from customers’ free-text requests using AI, with a confidence-based fallback</li><li>Define fallback and escalation rules for priority chats when no eligible agent is available</li><li>Add automated tests for agent assignment, chat-state transitions and concurrent assignment attempts</li><li>Standardise time handling in UTC and optimise assignment queries</li><li>Monitor waiting times, agent workload and assignment targets through an operations dashboard</li></ul></article>
+        </div>
+        <div class="case-link-row"><a class="case-cta" href="https://thisisanita.atlassian.net/jira/software/projects/BRD/boards/1" target="_blank" rel="noopener noreferrer">View the live Bridged Jira board →</a><p class="access-note">The live board may require Atlassian access.</p></div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="shell case-prose-grid">
+        <div><p class="eyebrow">REFLECTION</p><h2>Build for today’s needs while leaving room to evolve.</h2></div>
+        <div class="case-copy"><p>Bridged gave me hands-on experience across the complete software-development lifecycle and showed me that a reliable support experience depends on both the interface and the system behind it. Designing the assignment process meant considering not only how to select an eligible agent, but also how to retry, fall back or escalate when no agent is available, especially for priority chats. The broader lesson was to match technical decisions to demonstrated needs: the modular monolith and PostgreSQL-backed queue are appropriate for the MVP, while additional infrastructure such as a dedicated message queue should only be introduced when usage and performance data justify the added complexity.</p></div>
+      </div>
+    </section>
+
+    <section class="case-next"><div class="shell"><p class="eyebrow">NEXT PROJECT</p><a href="user-personas.html"><span>Creating User Personas</span><b>→</b></a></div></section>
+  </main>
+  <script src="../script.js"></script>
+</body>
+</html>

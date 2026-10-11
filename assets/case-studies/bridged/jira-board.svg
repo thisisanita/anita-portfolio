@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Bridged Jira board</title>
+  <desc id="desc">A snapshot-style illustration of the Bridged product backlog, with planned production work in To Do and completed MVP work in Done.</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#352b28" flood-opacity=".10"/></filter>
+    <style>
+      .ui{font-family:Inter,Arial,sans-serif;fill:#2f2927}.muted{fill:#6f6865}.head{font-size:22px;font-weight:700}.label{font-size:16px;font-weight:700}.card-title{font-size:18px;font-weight:600}.meta{font-size:14px}.card{fill:#fff;stroke:#ded9d5;stroke-width:1.5}.column{fill:#f4f3f1}.done{fill:#e5f3e8}.todo{fill:#e8effc}.key{font-size:14px;font-weight:600;fill:#655f5c}
+    </style>
+  </defs>
+  <rect width="1200" height="760" rx="28" fill="#faf9f7"/>
+  <rect width="1200" height="74" rx="28" fill="#fff"/><rect y="52" width="1200" height="22" fill="#fff"/>
+  <circle cx="42" cy="37" r="18" fill="#1868db"/><path d="M34 29h17v17H34z" fill="#fff" opacity=".95"/>
+  <text x="72" y="45" class="ui head">Bridged</text><text x="1090" y="43" class="ui meta muted">BOARD</text>
+  <rect x="26" y="98" width="550" height="628" rx="22" class="column"/><rect x="598" y="98" width="576" height="628" rx="22" class="column"/>
+  <text x="50" y="137" class="ui label">TO DO</text><text x="130" y="137" class="ui meta muted">7</text>
+  <text x="622" y="137" class="ui label">DONE</text><text x="690" y="137" class="ui meta muted">8</text>
+  <g filter="url(#shadow)">
+    <g transform="translate(46 160)"><rect width="510" height="112" rx="15" class="card"/><rect x="18" y="18" width="7" height="76" rx="4" fill="#4c7bd9"/><text x="40" y="48" class="ui card-title">Preserve conversations across interruptions</text><rect x="40" y="66" width="232" height="25" rx="12" class="todo"/><text x="54" y="83" class="ui meta">PRODUCTION READINESS</text><text x="434" y="87" class="ui key">BRD-9</text></g>
+    <g transform="translate(46 289)"><rect width="510" height="112" rx="15" class="card"/><rect x="18" y="18" width="7" height="76" rx="4" fill="#4c7bd9"/><text x="40" y="48" class="ui card-title">Protect access with secure authentication</text><rect x="40" y="66" width="232" height="25" rx="12" class="todo"/><text x="54" y="83" class="ui meta">PRODUCTION READINESS</text><text x="434" y="87" class="ui key">BRD-8</text></g>
+    <g transform="translate(46 418)"><rect width="510" height="112" rx="15" class="card"/><rect x="18" y="18" width="7" height="76" rx="4" fill="#4c7bd9"/><text x="40" y="34" class="ui card-title"><tspan x="40">Monitor waiting times, workload</tspan><tspan x="40" dy="21">and assignment targets</tspan></text><rect x="40" y="72" width="232" height="25" rx="12" class="todo"/><text x="54" y="89" class="ui meta">PRODUCTION READINESS</text><text x="422" y="93" class="ui key">BRD-10</text></g>
+    <g transform="translate(46 547)"><rect width="510" height="112" rx="15" class="card"/><rect x="18" y="18" width="7" height="76" rx="4" fill="#4c7bd9"/><text x="40" y="48" class="ui card-title">Strengthen reliability and prepare for growth</text><rect x="40" y="66" width="232" height="25" rx="12" class="todo"/><text x="54" y="83" class="ui meta">PRODUCTION READINESS</text><text x="422" y="87" class="ui key">BRD-11</text></g>
+    <g transform="translate(618 160)"><rect width="536" height="112" rx="15" class="card"/><circle cx="25" cy="26" r="10" fill="#2f8f46"/><path d="m20 26 4 4 7-9" fill="none" stroke="#fff" stroke-width="2.5"/><text x="46" y="48" class="ui card-title">Guide customers through support triage</text><rect x="46" y="66" width="224" height="25" rx="12" class="done"/><text x="60" y="83" class="ui meta">MVP DELIVERED</text><text x="458" y="87" class="ui key">BRD-3</text></g>
+    <g transform="translate(618 289)"><rect width="536" height="112" rx="15" class="card"/><circle cx="25" cy="26" r="10" fill="#2f8f46"/><path d="m20 26 4 4 7-9" fill="none" stroke="#fff" stroke-width="2.5"/><text x="46" y="48" class="ui card-title">Route customers to suitable agents fairly</text><rect x="46" y="66" width="224" height="25" rx="12" class="done"/><text x="60" y="83" class="ui meta">MVP DELIVERED</text><text x="458" y="87" class="ui key">BRD-4</text></g>
+    <g transform="translate(618 418)"><rect width="536" height="112" rx="15" class="card"/><circle cx="25" cy="26" r="10" fill="#2f8f46"/><path d="m20 26 4 4 7-9" fill="none" stroke="#fff" stroke-width="2.5"/><text x="46" y="48" class="ui card-title">Enable real-time customer-agent conversations</text><rect x="46" y="66" width="224" height="25" rx="12" class="done"/><text x="60" y="83" class="ui meta">MVP DELIVERED</text><text x="458" y="87" class="ui key">BRD-5</text></g>
+    <g transform="translate(618 547)"><rect width="536" height="112" rx="15" class="card"/><circle cx="25" cy="26" r="10" fill="#2f8f46"/><path d="m20 26 4 4 7-9" fill="none" stroke="#fff" stroke-width="2.5"/><text x="46" y="48" class="ui card-title">Deploy an accessible end-to-end MVP</text><rect x="46" y="66" width="224" height="25" rx="12" class="done"/><text x="60" y="83" class="ui meta">MVP DELIVERED</text><text x="458" y="87" class="ui key">BRD-7</text></g>
+  </g>
+  <text x="600" y="706" text-anchor="middle" class="ui meta muted">Product backlog snapshot · completed MVP and planned production work</text>
+</svg>
