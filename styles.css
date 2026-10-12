@@ -343,6 +343,7 @@ h3 { font-size: clamp(28px, 3vw, 38px); letter-spacing: -.01em; }
 .comparison-grid article, .persona-grid article { padding: 28px; border: 1px solid var(--line); border-radius: 22px; background: rgba(255,255,255,.55); }.comparison-grid h3, .persona-grid h3 { font-size: 27px; }.comparison-grid p, .comparison-grid li, .persona-grid p { color: var(--espresso-2); font-size: 14px; }.comparison-grid ul { padding-left: 18px; }
 .platform-logo { display: block; width: 52px; height: 52px; margin-bottom: 22px; object-fit: contain; object-position: left center; }.platform-logo-wide { width: 68px; }
 .case-figure { margin: 58px 0 0; }.case-figure img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 22px; background: var(--white); box-shadow: 0 18px 50px rgba(58,46,42,.08); }.case-figure figcaption { margin-top: 12px; color: var(--espresso-2); font-size: 13px; }.case-span { grid-column: 1 / -1; }
+.demo-figure video { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 22px; background: var(--espresso); box-shadow: 0 18px 50px rgba(58,46,42,.12); object-fit: contain; }
 .case-personas .case-figure,
 .case-personas .persona-showcase { width: min(100%, 880px); margin-left: auto; margin-right: auto; }
 .case-bridged .case-figure,
